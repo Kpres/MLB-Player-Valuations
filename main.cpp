@@ -18,6 +18,7 @@ int main(){
 	std::ifstream infile( "2017_MLB_Player_Salary_Info.md" );
 	std::ifstream infile_batter( "2017_MLB_Batter_Info.md" );
 	std::ifstream infile_pitcher( "2017_MLB_Pitcher_Info.md" );
+
 	int count=0;
 	while (infile){
 		std::string s;
@@ -49,7 +50,6 @@ int main(){
 	    	}
 	    	x++;
 	    }
-
 		map_player_salary.insert(std::make_pair(modified_name, data));
 		count++;
 	}
@@ -97,7 +97,6 @@ int main(){
 	    	}
 	    	x++;
 	    }
-
 		map_pitcher_player.insert(std::make_pair(modified_name, pitcher_data));
 		count++;
 	}
