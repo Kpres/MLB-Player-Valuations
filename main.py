@@ -131,5 +131,4 @@ if __name__ == "__main__":
     #     for team in pitcher_data[p]:
     #         print(p, team, pitcher_data[p][team].wins)
     
-    calc_fip(pitcher_data, salary_data_dict)
     
