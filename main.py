@@ -112,3 +112,4 @@ if __name__ == "__main__":
                 print(p, pdict[team])
     
     
+    calc_fip(pitcher_data, salary_data_dict)
