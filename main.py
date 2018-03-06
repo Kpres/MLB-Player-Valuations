@@ -73,7 +73,24 @@ def parse_pitcher_data(pitcher_dict, pitcher_data):
                 team_dict[team] = p
                 pitcher_dict[name] = team_dict
 
+def calc_fip(pitcher_data, salary_data_dict):
+    #pitcher_data = { Pitcher name ,{ Team name , Pitching data}}
+    #salary_data_dict = { Pitcher name  , { Team name ,  salary} }
+    #fip_dict = {  Pitcher name , FIP }; we will have multiple entries with same Pitcher name
+    #fip_dict = { Pithcer name, Salary };  we will have multiple entries with same Pitcher name
+    fip_dict = {}
+    salary_dict = {}
+
+    print(salary_data_dict)
+    #make salary_dict first
+    for player in salary_data_dict:
+        for salary in player:
+            print(salary)
+
+
             
+
+
 
 
 
