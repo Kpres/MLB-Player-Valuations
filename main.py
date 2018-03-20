@@ -81,11 +81,11 @@ def calc_fip(pitcher_data, salary_data_dict):
     fip_dict = {}
     salary_dict = {}
 
-    print(salary_data_dict)
+    print(salary_data_dict.keys())
     #make salary_dict first
-    for player in salary_data_dict:
-        for salary in player:
-            print(salary)
+    for player in salary_data_dict.keys():
+        for salary in player.keys():
+            print(salary_data_dict[player][salary])
 
 
             
